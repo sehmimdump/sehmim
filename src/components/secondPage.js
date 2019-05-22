@@ -1,7 +1,9 @@
 import React, { Component } from 'react';
 import "../styles/secondPage.sass";
 import "../styles/media_Queries/tv.sass";
-import MusicProjects from './projects/MusicProjects';
+
+import ControlledCarousel from "./projects/ControlledCarousel";
+// import MusicProjects from './projects/MusicProjects';
 // import { TweenMax, TimelineLite, Power2, Elastic, CSSPlugin } from "gsap/TweenMax";
 
 export default class SecondPage extends Component {
@@ -22,10 +24,9 @@ export default class SecondPage extends Component {
 
         return (
             <div className="SecondPage-main" id="projects">
+                <h1 className="SecondPage-main-header"> EXPERIENCE </h1>
                 <div className="SecondPage-Body">
-                    <div className="projects">
-
-                    </div>
+                    <ControlledCarousel />
                 </div>
             </div>
         );

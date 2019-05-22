@@ -4,10 +4,11 @@
     width: 0px
     height: 0px
 .navigation
+    position: fixed
+    z-index: 3000
     &_header
         font-size: 20px
         font-weight: 200
-        padding: 25px
         transition: all .3s ease-out
         text-shadow: 10px 10px 30px rgba(150, 150, 150, 1)
         &:hover
@@ -20,6 +21,7 @@
         border-radius: 50%
         background-image: url('http://www.clipartroo.com/images/74/cartoon-hamburger-clipart-74901.png')
         background-size: 100%
+        // background: radial-gradient(circle, rgba(255,255,255,1) 0%, rgba(255,242,241,1) 18%, rgba(255,242,241,1) 22%)
         position: fixed
         right: 4.75vw
         top: 9.5vh
@@ -52,15 +54,15 @@
 
     &_list
         perspective: 150rem
-        position: fixed
-        top: 40%
-        left: 87%
+        position: relative
+        bottom: 46vh
+        left: 83vw
         transform: translate(-50%, -50%)
         z-index: 200
     &_item
         display: inline-block
-        padding: 15%
-        margin: 15%
+        padding: 10%
+        margin: 10%
         text-transform: uppercase
         font-size: 20px
         background-size: 240%
