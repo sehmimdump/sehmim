@@ -1,0 +1,89 @@
+@import 'mixings.sass'
+@import url('https://fonts.googleapis.com/css?family=Cookie|Lobster+Two|Sacramento|Tangerine|Asap|Great+Vibes')
+*
+  padding: 0
+  margin: 0
+
+li 
+    font-size: 200%
+    margin: 10px 35px 0 50px
+    font-family: 'Sacramento', cursive
+
+.landingpage
+  height: 100vh
+  display: flex
+  flex-direction: column
+  flex-flow: column nowrap
+  justify-content: center
+  background-color: black
+  .who
+    display: flex
+    flex-direction: column
+  .header-sub
+    display: flex
+    flex-direction: column
+    margin-left: 20px
+    justify-content: center
+    height: 45vh
+
+
+.links
+  display: flex
+  justify-content: center
+  padding: 5px
+  &-items
+    width: 40px
+    height: 40px
+    margin: 1%
+    border-radius: 50%
+    box-shadow: 10px 10px 30px -3px rgba(0,0,0,0.15)
+    padding: 2px 10px 2px 10px
+    @include hovering-nav
+
+.header-main
+  margin: 0px
+  font-weight: 100
+  display: flex
+  font-size: 110px
+  justify-content: center
+  font-family: Cookie
+  letter-spacing: 3.5px
+  @include header-effect
+
+.circle-div
+  display: flex
+  justify-content: center
+.circle 
+  top: 25%
+  left: 45%
+  width: 100px
+  height: 100px
+  border-radius: 50%
+  transition: all .3s ease-out
+
+  &:hover
+    transform: scale(1.1)
+
+
+.qualities
+  text-align: center
+  color: beige
+  font-size: 35px
+  letter-spacing: 2px
+  font-family: Cookie
+  padding: 10px
+
+.qualities-each
+  transition: all .3s ease-out
+  &:hover
+    color: (rgba(200,80,50,.99))
+
+.qualities-sub
+  text-align: center
+  color: beige
+  font-size: 150%
+  font-weight: 100
+  font-family: 'Tangerine', cursive
+  letter-spacing: 3px
+    
+
