@@ -8,7 +8,7 @@ class App extends Component {
 
     return (
       <div className="App">
-        <LandingPage dataFromLand ={ this.changingState } />
+        <LandingPage dataFromLand={this.changingState} />
         <SecondPage />
       </div>
     );

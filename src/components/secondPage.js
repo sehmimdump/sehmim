@@ -23,7 +23,7 @@ export default class SecondPage extends Component {
 
 
         return (
-            <div className="SecondPage-main" id="projects">
+            <div className="SecondPage-main" id="experience">
                 <h1 className="SecondPage-main-header"> EXPERIENCE </h1>
                 <div className="SecondPage-Body">
                     <ControlledCarousel />

@@ -18,7 +18,7 @@ export default class Hamburger extends React.Component {
   render() {
 
     const SideNavData = [
-      { title: 'EXPEREINCE', href: '#' },
+      { title: 'EXPERIENCE', href: '#experience' },
       { title: 'PROJECTS', href: '#projects' }
     ]
     return (
