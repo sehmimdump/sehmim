@@ -15,6 +15,11 @@ export default class Hamburger extends React.Component {
   handleLinkChange = () => {
     document.getElementById("nav_toggle").checked = false
   }
+
+  // componentWillUpdate(){
+  //   document.getElementById("nav_toggle").checked === true && 
+  // }
+
   render() {
 
     const SideNavData = [
@@ -36,7 +41,7 @@ export default class Hamburger extends React.Component {
                 return (
                   <li key={index} className="navigation_item">
                     <AnchorLink
-                      offset='0'
+                      offset='80'
                       onClick={this.handleLinkChange}
                       href={item.href}
                       className="navigation_link">

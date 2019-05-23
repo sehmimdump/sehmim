@@ -11,31 +11,21 @@ import { autoPlay } from 'react-swipeable-views-utils';
 // styleClass
 import '../../styles/media_Queries/tv.sass';
 import '../../styles/projects-card.sass'
-
+import { jobs } from "../../util/ExperienceData"
 const AutoPlaySwipeableViews = autoPlay(SwipeableViews);
 
-const jobs = [
-  {
-    jobTitle: 'Software Engineer',
-    jobCompany: 'Scotiabank Toronto',
-    jobDates: 'Jan 2019 - April 2019',
-    jobDuty: [
-      'Developed a Chatbot for Equity Traders which closed the gap between traders and clients by 90% resulting an increase in sales',
-      'Increased accuracy of intents by integrating latest machine learning Natural Language Processing libraries such as NodeNLP and spaCy',
-      'Increased performance and code readability by 70% by re-designing and refactoring entire back-end'
-    ],
-    techStack: [
-      'https://avatars1.githubusercontent.com/u/36300238',
-      'https://banner2.kisspng.com/20180425/jrw/kisspng-node-js-javascript-web-application-express-js-comp-5ae0f84e2a4242.1423638015246930701731.jpg',
-      'https://www.docker.com/sites/default/files/social/docker_facebook_share.png',
-      'https://camo.githubusercontent.com/af4bf83ab2ca125346740f9961345a24ec43b3a9/68747470733a2f2f636c6475702e636f6d2f78465646784f696f41552e737667',
-      'https://upload.wikimedia.org/wikipedia/commons/thumb/8/88/SpaCy_logo.svg/800px-SpaCy_logo.svg.png',
-    ]
-  }]
 
 const styles = theme => ({
   root: {
     flexGrow: 1,
+  },
+  WrapperMain: {
+    display: 'flex',
+    flexDirection: 'column',
+  },
+  autoPlayClass: {
+    width: '100%',
+    overflowWrap: 'break-word',
   },
   header: {
     display: 'flex',
@@ -52,6 +42,13 @@ const styles = theme => ({
   headerBottom: {
     display: 'flex',
     justifyContent: 'center',
+  },
+  mobileStepper: {
+    marginTop: '2vh',
+    boxShadow:
+      `0px 2px 4px -1px rgba(0,0,0,0.2), 
+      0px 4px 5px 0px rgba(0,0,0,0.14), 
+      0px 1px 10px 0px rgba(0,0,0,0.12)`
   }
 });
 
@@ -87,7 +84,7 @@ class SwipeableTextMobileStepper extends React.Component {
 
           <AutoPlaySwipeableViews
             className={classes.autoPlayClass}
-            interval={10000}
+            interval={15000}
             axis={theme.direction === 'rtl' ? 'x-reverse' : 'x'}
             index={activeStep}
             onChangeIndex={this.handleStepChange}
@@ -131,7 +128,7 @@ class SwipeableTextMobileStepper extends React.Component {
 
 
                     <div className='project-right'>
-                      <img className='project-right-img' src="https://cdn-images-1.medium.com/max/1600/1*BWZp1CB1u7QE1CAr6eewrA.jpeg"></img>
+                      <img className='project-right-img' src={step.rightImg}></img>
                     </div>
                   </div>
                 ) : null}
