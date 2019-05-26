@@ -118,7 +118,7 @@ class SwipeableTextMobileStepper extends React.Component {
                           step.techStack.map(stackImg => {
                             return (
                               <li className="stack-group-each">
-                                <img className="stack-img" src={stackImg}></img>
+                                <img id="stack-img" className="stack-img" src={stackImg}></img>
                               </li>
                             )
                           })

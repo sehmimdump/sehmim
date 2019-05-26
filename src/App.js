@@ -3,6 +3,8 @@ import './App.sass';
 import LandingPage from "./components/landingPage";
 import SecondPage from "./components/secondPage";
 import ThirdPage from "./components/ThirdPage";
+import FourthPage from "./components/FourthPage";
+
 class App extends Component {
 
   render() {
@@ -12,6 +14,7 @@ class App extends Component {
         <LandingPage dataFromLand={this.changingState} />
         <SecondPage />
         <ThirdPage />
+        <FourthPage />
       </div>
     );
   }

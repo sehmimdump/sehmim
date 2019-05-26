@@ -14,7 +14,7 @@ import AppBar from '@material-ui/core/AppBar';
 const socialData = [
   { title: 'linkedin', href: 'https://www.linkedin.com/in/sehmim-haque/', src: 'https://grytics.com/wp-content/uploads/2015/01/1414386638_linkedin_circle_color-512.png' },
   { title: 'github', href: 'https://github.com/sehmim', src: 'https://github.githubassets.com/images/modules/logos_page/GitHub-Mark.png' },
-  { title: 'stackoverflow', href: 'https://stackoverflow.com/users/9531113/sehmim-al-haque', src: "https://streamdata.io/wp-content/uploads/2018/04/stack-overflow-orange.png" },
+  { title: 'stackoverflow', href: 'https://drive.google.com/file/d/1EqrkYdythCkqNT8RWSkTAYlOXihujKEH/view?usp=sharing', src: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRrhIF72WUyF2HwGcKpAlBNW8Q53sRM63ilQAuHWO2C0TXhj4RT" },
 ]
 class LandingPage extends Component {
 
@@ -68,13 +68,13 @@ class LandingPage extends Component {
         </div>
 
         <div className="qualities">
-          ♦<AnchorLink className="qualities-each" href="#projects" >
+          ♦<AnchorLink offset='80' className="qualities-each" href="#projects" >
             ♦ Web Developer ♦
           </AnchorLink>
-          <AnchorLink className="qualities-each" href="#projects" >
+          <AnchorLink offset='80' className="qualities-each" href="#music" >
             ♦ Artsy Guy ♦
           </AnchorLink>
-          <AnchorLink className="qualities-each" href="#projects" >
+          <AnchorLink offset='80' className="qualities-each" href="#music" >
             ♦ Musician ♦
           </AnchorLink>
           ♦</div>

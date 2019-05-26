@@ -1,6 +1,6 @@
 import React from 'react';
 
-import { } from "../../styles/music.sass";
+import "../../styles/music.sass";
 // Library Components
 import MusicPlayer from 'react-responsive-music-player';
 
@@ -52,9 +52,9 @@ export default class MusicProjects extends React.Component {
     ]
 
     return (
-      <div className="" id="Musician">
-        <div className="container">
-          <MusicPlayer playlist={playlist} />
+      <div className="" id="music">
+        <div style={{ maxWidth: "80%" }} className="container">
+          <MusicPlayer className='music-player' playlist={playlist} />
         </div>
       </div>
     );
