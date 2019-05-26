@@ -23,6 +23,9 @@ const styles = {
         height: 200,
         margin: 10
     },
+    img: {
+        width: '20px'
+    }
 };
 
 function ProjectEach(props) {
