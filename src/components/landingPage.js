@@ -14,7 +14,7 @@ import AppBar from '@material-ui/core/AppBar';
 const socialData = [
   { title: 'linkedin', href: 'https://www.linkedin.com/in/sehmim-haque/', src: 'https://grytics.com/wp-content/uploads/2015/01/1414386638_linkedin_circle_color-512.png' },
   { title: 'github', href: 'https://github.com/sehmim', src: 'https://github.githubassets.com/images/modules/logos_page/GitHub-Mark.png' },
-  { title: 'stackoverflow', href: 'https://drive.google.com/file/d/1EqrkYdythCkqNT8RWSkTAYlOXihujKEH/view?usp=sharing', src: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRrhIF72WUyF2HwGcKpAlBNW8Q53sRM63ilQAuHWO2C0TXhj4RT" },
+  { title: 'stackoverflow', href: "https://www.visualcv.com/sehmim-haque/", src: "https://webstockreview.net/images/resume-clipart-big-19.png" },
 ]
 class LandingPage extends Component {
 
@@ -50,10 +50,9 @@ class LandingPage extends Component {
     return (
       <div className="landingpage">
         {/* APPBAR */}
-        <AppBar
+        <AppBar color="secondary"
           className={this.state.scrolled >= .3 ?
             `${classes.appbar} ${classes.appbar2}` : `${classes.appbar}`}
-
         >
         </AppBar>
         {/* NAME */}
